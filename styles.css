@@ -197,12 +197,12 @@ h2 {
   border-radius: 5px;
 }
 
-/* Artwork images can replace their placeholder divs and keep these styles. */
+/* Fill image cards edge to edge; different image proportions may be cropped. */
 .art-image:not(.artwork-placeholder) {
   display: block;
   height: 300px;
-  object-fit: contain;
-  background: var(--surface);
+  object-fit: cover;
+  object-position: center;
 }
 
 .work-link:focus-visible {
