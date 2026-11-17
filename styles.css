@@ -51,7 +51,7 @@ a {
 
 .site-title {
   color: var(--blue);
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 650;
   letter-spacing: 0.12em;
 }
@@ -60,19 +60,24 @@ a {
 .site-nav {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 44px;
 }
 
 .site-nav a,
 .site-footer {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .site-nav a:hover,
 .site-nav a[aria-current="page"],
 .site-footer a:hover {
   color: var(--blue);
+}
+
+.site-nav a[aria-current="page"] {
+  border-bottom: 2px solid var(--blue);
+  font-weight: 600;
 }
 
 /* Centered landing area and its small blue section label. */
@@ -196,7 +201,8 @@ h2 {
 .art-image:not(.artwork-placeholder) {
   display: block;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--surface);
 }
 
 .work-link:focus-visible {
@@ -259,6 +265,7 @@ h2 {
   display: block;
   max-height: 72vh;
   object-fit: contain;
+  background: var(--surface);
 }
 
 .detail-page h1 {
@@ -320,11 +327,15 @@ h2 {
   }
 
   .site-title {
-    font-size: 18px;
+    font-size: 23px;
   }
 
   .site-nav {
-    gap: clamp(16px, 5vw, 24px);
+    gap: clamp(16px, 5vw, 26px);
+  }
+
+  .site-nav a {
+    font-size: 14px;
   }
 
   .hero {
