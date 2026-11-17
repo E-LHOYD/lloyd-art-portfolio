@@ -6,7 +6,7 @@
   --muted: #657187;
   --blue: #2864c5;
   --line: #dce5f1;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 * {
@@ -29,19 +29,19 @@ a {
 }
 
 .page-width {
-  width: min(100% - 48px, 960px);
+  width: min(100% - 80px, 880px);
   margin: 0 auto;
 }
 
 .site-header {
-  padding: 24px;
+  padding: 28px 40px;
   border-bottom: 1px solid var(--line);
 }
 
 .site-nav {
   display: flex;
   justify-content: center;
-  gap: 36px;
+  gap: 40px;
 }
 
 .site-nav a,
@@ -56,8 +56,8 @@ a {
 }
 
 .hero {
-  padding-top: 95px;
-  padding-bottom: 80px;
+  padding-top: 112px;
+  padding-bottom: 104px;
   text-align: center;
 }
 
@@ -80,8 +80,9 @@ p {
 h1 {
   margin-bottom: 16px;
   color: var(--blue);
-  font-size: clamp(64px, 13vw, 128px);
-  letter-spacing: 0.08em;
+  font-size: clamp(64px, 12vw, 112px);
+  font-weight: 600;
+  letter-spacing: 0.04em;
   line-height: 1;
 }
 
@@ -96,7 +97,7 @@ h1 {
 
 .button-link {
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 30px;
   padding: 12px 20px;
   border-radius: 4px;
   background: var(--blue);
@@ -117,14 +118,14 @@ h1 {
 }
 
 .hero-image {
-  min-height: 340px;
-  margin-top: 56px;
+  min-height: 360px;
+  margin-top: 72px;
   border-radius: 6px;
 }
 
 .work-section {
-  padding-top: 56px;
-  padding-bottom: 96px;
+  padding-top: 80px;
+  padding-bottom: 112px;
   border-top: 1px solid var(--line);
 }
 
@@ -132,7 +133,7 @@ h1 {
   display: flex;
   align-items: end;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .section-heading .eyebrow {
@@ -153,22 +154,22 @@ h2 {
 .art-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 32px 24px;
+  gap: 48px 32px;
 }
 
 .art-image {
-  min-height: 280px;
+  min-height: 300px;
   border-radius: 5px;
 }
 
 .art-card h3 {
-  margin: 12px 0 0;
+  margin: 16px 0 0;
   font-size: 15px;
   font-weight: 500;
 }
 
 .about-section {
-  padding: 72px 0;
+  padding: 88px 0;
   background: var(--surface);
 }
 
@@ -181,8 +182,8 @@ h2 {
 }
 
 .contact-section {
-  padding-top: 88px;
-  padding-bottom: 96px;
+  padding-top: 104px;
+  padding-bottom: 112px;
 }
 
 .contact-section h2 {
@@ -200,7 +201,7 @@ h2 {
 .site-footer {
   display: flex;
   justify-content: space-between;
-  padding: 22px max(24px, calc((100% - 960px) / 2));
+  padding: 26px max(40px, calc((100% - 880px) / 2));
   border-top: 1px solid var(--line);
 }
 
@@ -210,7 +211,7 @@ h2 {
 
 @media (max-width: 600px) {
   .page-width {
-    width: calc(100% - 36px);
+    width: calc(100% - 48px);
   }
 
   .site-header {
@@ -222,22 +223,22 @@ h2 {
   }
 
   .hero {
-    padding-top: 72px;
-    padding-bottom: 64px;
+    padding-top: 80px;
+    padding-bottom: 72px;
   }
 
   .hero-image {
-    min-height: 240px;
-    margin-top: 40px;
+    min-height: 250px;
+    margin-top: 48px;
   }
 
   .work-section {
-    padding-top: 48px;
-    padding-bottom: 68px;
+    padding-top: 60px;
+    padding-bottom: 80px;
   }
 
   .art-grid {
-    gap: 24px 14px;
+    gap: 32px 18px;
   }
 
   .art-image {
@@ -249,11 +250,15 @@ h2 {
   }
 
   .about-section {
-    padding: 56px 0;
+    padding: 68px 0;
   }
 
   .contact-section {
-    padding-top: 68px;
-    padding-bottom: 72px;
+    padding-top: 80px;
+    padding-bottom: 88px;
+  }
+
+  .site-footer {
+    padding: 22px 24px;
   }
 }
