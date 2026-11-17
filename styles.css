@@ -264,9 +264,9 @@ h2 {
 
 .detail-image:not(.artwork-placeholder) {
   display: block;
-  max-height: 72vh;
-  object-fit: contain;
-  background: var(--surface);
+  height: auto;
+  min-height: 0;
+  max-height: none;
 }
 
 .detail-page h1 {
