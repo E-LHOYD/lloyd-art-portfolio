@@ -70,6 +70,7 @@ a {
 }
 
 .site-nav a:hover,
+.site-nav a[aria-current="page"],
 .site-footer a:hover {
   color: var(--blue);
 }
@@ -156,6 +157,10 @@ h1 {
   border-top: 1px solid var(--line);
 }
 
+.all-works {
+  padding-top: 64px;
+}
+
 .section-heading {
   display: flex;
   align-items: end;
@@ -203,6 +208,17 @@ h2 {
   margin: 16px 0 0;
   font-size: 15px;
   font-weight: 500;
+}
+
+.preview-link {
+  display: inline-block;
+  margin-top: 36px;
+  color: var(--blue);
+  font-size: 14px;
+}
+
+.preview-link:hover {
+  text-decoration: underline;
 }
 
 /* About section uses a lightly tinted background for separation. */

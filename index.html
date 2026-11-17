@@ -12,10 +12,10 @@
     <!-- The portfolio name sits above the section navigation. -->
     <header class="site-header">
       <a class="site-title" href="#home">LLOYD</a>
-      <!-- These links jump to the matching sections below. -->
+      <!-- Section links stay on the homepage; Works opens the full gallery. -->
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#home">Home</a>
-        <a href="#works">Works</a>
+        <a href="works.html">Works</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -28,19 +28,19 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. A collection
           of artwork, ideas, and inspiration.
         </p>
-        <a class="button-link" href="#works">View my work</a>
+        <a class="button-link" href="works.html">View all works</a>
         <!-- Replace this placeholder with a featured artwork image. -->
         <div class="artwork-placeholder hero-image" role="img" aria-label="Artwork image placeholder">
           <span>Artwork image</span>
         </div>
       </section>
 
-      <!-- Artwork gallery: each card has an image placeholder and a title. -->
-      <section class="work-section page-width" id="works">
+      <!-- A small selection previews the full gallery on works.html. -->
+      <section class="work-section page-width" id="selected-works">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">A selection of my work</p>
-            <h2>Works</h2>
+            <p class="eyebrow">A few selected pieces</p>
+            <h2>Selected works</h2>
           </div>
         </div>
         <div class="art-grid">
@@ -60,23 +60,8 @@
             </a>
             <h3>Somewhere, Slowly</h3>
           </article>
-          <article class="art-card">
-            <a class="work-link" href="works/soft-edges.html" aria-label="View Soft Edges">
-              <div class="artwork-placeholder art-image" role="img" aria-label="Artwork image placeholder">
-                <span>Artwork image</span>
-              </div>
-            </a>
-            <h3>Soft Edges</h3>
-          </article>
-          <article class="art-card">
-            <a class="work-link" href="works/after-the-rain.html" aria-label="View After the Rain">
-              <div class="artwork-placeholder art-image" role="img" aria-label="Artwork image placeholder">
-                <span>Artwork image</span>
-              </div>
-            </a>
-            <h3>After the Rain</h3>
-          </article>
         </div>
+        <a class="preview-link" href="works.html">See all works →</a>
       </section>
 
       <!-- Short artist introduction. -->
