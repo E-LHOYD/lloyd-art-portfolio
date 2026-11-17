@@ -197,11 +197,12 @@ h2 {
   border-radius: 5px;
 }
 
-/* Fill image cards edge to edge; different image proportions may be cropped. */
+/* Keep real artwork images at their natural proportions so none of the image is cropped. */
 .art-image:not(.artwork-placeholder) {
   display: block;
-  height: 300px;
-  object-fit: cover;
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -359,10 +360,6 @@ h2 {
 
   .art-image {
     min-height: 170px;
-  }
-
-  .art-image:not(.artwork-placeholder) {
-    height: 170px;
   }
 
   .detail-image {
