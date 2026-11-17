@@ -1,3 +1,4 @@
+/* Shared colors and the simple system font used across the page. */
 :root {
   color-scheme: light;
   --background: #f8faff;
@@ -9,30 +10,36 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+/* Use predictable sizing for every element. */
 * {
   box-sizing: border-box;
 }
 
+/* Smoothly scroll when a navigation link targets a section. */
 html {
   scroll-behavior: smooth;
 }
 
+/* Apply the page background and base text colors. */
 body {
   margin: 0;
   background: var(--background);
   color: var(--ink);
 }
 
+/* Links inherit their section's color unless a component overrides it. */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* Center content and keep a consistent horizontal gutter. */
 .page-width {
   width: min(100% - 80px, 880px);
   margin: 0 auto;
 }
 
+/* Header navigation layout and hover feedback. */
 .site-header {
   padding: 28px 40px;
   border-bottom: 1px solid var(--line);
@@ -55,6 +62,7 @@ a {
   color: var(--blue);
 }
 
+/* Centered landing area and its small blue section label. */
 .hero {
   padding-top: 112px;
   padding-bottom: 104px;
@@ -70,6 +78,7 @@ a {
   text-transform: uppercase;
 }
 
+/* Remove inconsistent default top margins from common text elements. */
 h1,
 h2,
 h3,
@@ -77,6 +86,7 @@ p {
   margin-top: 0;
 }
 
+/* Make the portfolio name large, bold, and responsive. */
 h1 {
   margin-bottom: 16px;
   color: var(--blue);
@@ -86,6 +96,7 @@ h1 {
   line-height: 1;
 }
 
+/* Keep descriptive copy readable and centered. */
 .intro,
 .section-copy {
   max-width: 520px;
@@ -95,6 +106,7 @@ h1 {
   line-height: 1.7;
 }
 
+/* Style the primary link as a button. */
 .button-link {
   display: inline-block;
   margin-top: 30px;
@@ -109,6 +121,7 @@ h1 {
   background: #1d4e9b;
 }
 
+/* Shared appearance for empty artwork slots. */
 .artwork-placeholder {
   display: grid;
   place-items: center;
@@ -117,12 +130,14 @@ h1 {
   font-size: 12px;
 }
 
+/* Featured artwork slot dimensions and spacing. */
 .hero-image {
   min-height: 360px;
   margin-top: 72px;
   border-radius: 6px;
 }
 
+/* Gallery section spacing, heading layout, and item grid. */
 .work-section {
   padding-top: 80px;
   padding-bottom: 112px;
@@ -140,6 +155,7 @@ h1 {
   margin-bottom: 8px;
 }
 
+/* Consistent section heading and artwork count styles. */
 h2 {
   margin-bottom: 0;
   font-size: 36px;
@@ -157,6 +173,7 @@ h2 {
   gap: 48px 32px;
 }
 
+/* Give gallery images a consistent size and rounded corners. */
 .art-image {
   min-height: 300px;
   border-radius: 5px;
@@ -168,6 +185,7 @@ h2 {
   font-weight: 500;
 }
 
+/* About section uses a lightly tinted background for separation. */
 .about-section {
   padding: 88px 0;
   background: var(--surface);
@@ -181,6 +199,7 @@ h2 {
   margin-left: 0;
 }
 
+/* Contact area and email link styling. */
 .contact-section {
   padding-top: 104px;
   padding-bottom: 112px;
@@ -198,6 +217,7 @@ h2 {
   text-decoration: underline;
 }
 
+/* Footer separates copyright from the back-to-top link. */
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -209,6 +229,7 @@ h2 {
   margin-bottom: 0;
 }
 
+/* Compact spacing and image sizing for narrow screens. */
 @media (max-width: 600px) {
   .page-width {
     width: calc(100% - 48px);
