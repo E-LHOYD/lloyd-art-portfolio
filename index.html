@@ -3,126 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Selected artwork and creative work by Lloyd."
-    />
-    <title>Lloyd — Art Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Art portfolio by Lloyd." />
+    <title>LLOYD — Art Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="wordmark" href="#home" aria-label="Lloyd home">L<span>.</span></a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a class="nav-link active" href="#home">Home</a>
-        <a class="nav-link" href="#arts">Arts</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#arts">Arts</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a class="header-note" href="#contact">Available for select projects <span>↗</span></a>
     </header>
 
     <main>
-      <section class="hero section-wrap" id="home">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Independent artist · Based in London</p>
-          <h1>Art that makes<br />you <em>feel</em> something.</h1>
-          <div class="hero-bottom">
-            <p class="intro">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
-              collection of moments, ideas, and things worth looking at twice.
-            </p>
-            <a class="text-link" href="#arts">Explore selected work <span>↓</span></a>
-          </div>
+      <section class="hero page-width" id="home">
+        <p class="eyebrow">Art &amp; illustration</p>
+        <h1>LLOYD</h1>
+        <p class="intro">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. A collection
+          of artwork, ideas, and inspiration.
+        </p>
+        <a class="button-link" href="#arts">View my work</a>
+        <div class="artwork-placeholder hero-image" role="img" aria-label="Artwork image placeholder">
+          <span>Artwork image</span>
         </div>
-        <div class="hero-art artwork-placeholder" role="img" aria-label="Artwork image placeholder">
-          <span class="image-label">IMAGE GOES HERE</span>
-          <span class="image-index">01 / 06</span>
-          <span class="hero-caption">A study in quiet forms, 2025</span>
-          <span class="hero-sparkle" aria-hidden="true">✳</span>
-        </div>
-        <span class="hero-side-note">SELECTED WORKS — 2022–25</span>
       </section>
 
-      <section class="work-section section-wrap" id="arts">
+      <section class="work-section page-width" id="arts">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">A few things I’ve made</p>
-            <h2>Selected <em>works</em></h2>
+            <p class="eyebrow">A selection of my work</p>
+            <h2>Arts</h2>
           </div>
-          <span class="work-count">01 — 06</span>
+          <span class="work-count">01 — 04</span>
         </div>
         <div class="art-grid">
-          <article class="art-card art-card-tall">
-            <div class="art-image artwork-placeholder art-one" role="img" aria-label="Artwork image placeholder">
-              <span class="image-label">IMAGE GOES HERE</span>
-              <span class="card-number">01</span>
+          <article class="art-card">
+            <div class="artwork-placeholder art-image" role="img" aria-label="Artwork image placeholder">
+              <span>Artwork image</span>
             </div>
-            <div class="art-meta"><h3>Quiet Geometry</h3><span>2025 · Mixed media</span></div>
-          </article>
-          <article class="art-card art-card-offset">
-            <div class="art-image artwork-placeholder art-two" role="img" aria-label="Artwork image placeholder">
-              <span class="image-label">IMAGE GOES HERE</span>
-              <span class="card-number">02</span>
-            </div>
-            <div class="art-meta"><h3>Somewhere, Slowly</h3><span>2024 · Painting</span></div>
+            <h3>Quiet Geometry</h3>
           </article>
           <article class="art-card">
-            <div class="art-image artwork-placeholder art-three" role="img" aria-label="Artwork image placeholder">
-              <span class="image-label">IMAGE GOES HERE</span>
-              <span class="card-number">03</span>
+            <div class="artwork-placeholder art-image" role="img" aria-label="Artwork image placeholder">
+              <span>Artwork image</span>
             </div>
-            <div class="art-meta"><h3>Soft Edges</h3><span>2024 · Illustration</span></div>
+            <h3>Somewhere, Slowly</h3>
           </article>
-          <article class="art-card art-card-offset art-card-lower">
-            <div class="art-image artwork-placeholder art-four" role="img" aria-label="Artwork image placeholder">
-              <span class="image-label">IMAGE GOES HERE</span>
-              <span class="card-number">04</span>
+          <article class="art-card">
+            <div class="artwork-placeholder art-image" role="img" aria-label="Artwork image placeholder">
+              <span>Artwork image</span>
             </div>
-            <div class="art-meta"><h3>After the Rain</h3><span>2023 · Mixed media</span></div>
+            <h3>Soft Edges</h3>
+          </article>
+          <article class="art-card">
+            <div class="artwork-placeholder art-image" role="img" aria-label="Artwork image placeholder">
+              <span>Artwork image</span>
+            </div>
+            <h3>After the Rain</h3>
           </article>
         </div>
       </section>
 
       <section class="about-section" id="about">
-        <div class="about-inner section-wrap">
+        <div class="page-width">
           <p class="eyebrow">A little about me</p>
-          <div class="about-content">
-            <h2>Curiosity first.<br /><em>Always.</em></h2>
-            <div class="about-text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                I make things, notice things, and find inspiration in the
-                in-between.
-              </p>
-              <a class="text-link" href="#contact">More about my practice <span>↗</span></a>
-            </div>
-          </div>
-          <div class="about-image artwork-placeholder" role="img" aria-label="Artwork image placeholder">
-            <span class="image-label">IMAGE GOES HERE</span>
-            <span class="about-image-caption">Studio notes, London</span>
-          </div>
+          <h2>About</h2>
+          <p class="section-copy">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. I make
+            things, notice things, and find inspiration in the in-between.
+          </p>
         </div>
       </section>
 
-      <section class="contact-section section-wrap" id="contact">
-        <p class="eyebrow">Have something in mind?</p>
-        <h2>Let’s make<br /><em>something matter.</em></h2>
-        <a class="contact-link" href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
+      <section class="contact-section page-width" id="contact">
+        <p class="eyebrow">Have a project in mind?</p>
+        <h2>Let’s talk.</h2>
+        <a class="email-link" href="mailto:hello@example.com">hello@example.com</a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <a class="wordmark footer-mark" href="#home" aria-label="Back to top">L<span>.</span></a>
-      <p>© 2025 Lloyd. Made with intention.</p>
-      <a class="back-to-top" href="#home">Back to top ↑</a>
+      <p>© 2025 LLOYD</p>
+      <a href="#home">Back to top ↑</a>
     </footer>
   </body>
 </html>
