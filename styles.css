@@ -39,12 +39,24 @@ a {
   margin: 0 auto;
 }
 
-/* Header navigation layout and hover feedback. */
+/* Stack the small portfolio name above the section navigation. */
 .site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
   padding: 28px 40px;
   border-bottom: 1px solid var(--line);
 }
 
+.site-title {
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+}
+
+/* Lay out the page tabs in a centered row. */
 .site-nav {
   display: flex;
   justify-content: center;
@@ -86,13 +98,13 @@ p {
   margin-top: 0;
 }
 
-/* Make the portfolio name large, bold, and responsive. */
+/* Style headings used on individual artwork pages. */
 h1 {
   margin-bottom: 16px;
   color: var(--blue);
-  font-size: clamp(64px, 12vw, 112px);
+  font-size: clamp(36px, 6vw, 56px);
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   line-height: 1;
 }
 
@@ -155,18 +167,13 @@ h1 {
   margin-bottom: 8px;
 }
 
-/* Consistent section heading and artwork count styles. */
+/* Keep section headings clear and simple. */
 h2 {
   margin-bottom: 0;
   font-size: 36px;
 }
 
-.work-count {
-  padding-bottom: 5px;
-  color: var(--muted);
-  font-size: 12px;
-}
-
+/* Display the work cards in two even columns. */
 .art-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -175,8 +182,21 @@ h2 {
 
 /* Give gallery images a consistent size and rounded corners. */
 .art-image {
+  width: 100%;
   min-height: 300px;
   border-radius: 5px;
+}
+
+/* Artwork images can replace their placeholder divs and keep these styles. */
+.art-image:not(.artwork-placeholder) {
+  display: block;
+  height: 300px;
+  object-fit: cover;
+}
+
+.work-link:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
 }
 
 .art-card h3 {
@@ -197,6 +217,50 @@ h2 {
 
 .section-copy {
   margin-left: 0;
+}
+
+/* Artwork detail pages show a larger image, title, and description. */
+.detail-page {
+  padding-top: 48px;
+  padding-bottom: 88px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--blue);
+  font-size: 14px;
+}
+
+.detail-image {
+  width: 100%;
+  min-height: 420px;
+  margin-bottom: 32px;
+  border-radius: 5px;
+}
+
+.detail-image:not(.artwork-placeholder) {
+  display: block;
+  max-height: 72vh;
+  object-fit: contain;
+}
+
+.detail-page h1 {
+  margin-bottom: 28px;
+}
+
+.art-description {
+  max-width: 640px;
+}
+
+.art-description h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.art-description p {
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 /* Contact area and email link styling. */
@@ -239,8 +303,12 @@ h2 {
     padding: 20px 14px;
   }
 
+  .site-title {
+    font-size: 18px;
+  }
+
   .site-nav {
-    gap: 24px;
+    gap: clamp(16px, 5vw, 24px);
   }
 
   .hero {
@@ -264,6 +332,19 @@ h2 {
 
   .art-image {
     min-height: 170px;
+  }
+
+  .art-image:not(.artwork-placeholder) {
+    height: 170px;
+  }
+
+  .detail-image {
+    min-height: 260px;
+  }
+
+  .detail-page {
+    padding-top: 32px;
+    padding-bottom: 64px;
   }
 
   .art-card h3 {
